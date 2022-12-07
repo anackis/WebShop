@@ -1,16 +1,16 @@
 import './form-input.style.scss';
 
-
-const FormInput = ({ label, ...inputoptions }) => {
+const FormInput = ({ label, ...otherProps }) => {
 // const FormInput = ({ label, ...otherProps }) => {
   return (
     <div className='group'>
-      <input className='form-input' {...inputoptions} />
+      <input className='form-input' {...otherProps} />
       {label && (
         <label
           className={`${
-            inputoptions.value ? 'shrink' : ''
+            otherProps.value ? 'shrink' : ''
           } form-input-label`}
+          // className="form-input-label"
         >
           {label}
         </label>
@@ -20,3 +20,6 @@ const FormInput = ({ label, ...inputoptions }) => {
 };
 
 export default FormInput;
+
+
+

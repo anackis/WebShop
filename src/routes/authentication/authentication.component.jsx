@@ -1,7 +1,7 @@
 // import { signInWithGooglePopup, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils';
 import SignUpForm from '../../components/sign-up-form/sign-up-form.component';
 import SignInForm from '../../components/sign-in-form/sign-in-form.component';
- 
+ import './authentication.style.scss';
 
 const Authentication = () => {
 
@@ -11,8 +11,7 @@ const Authentication = () => {
   //   console.log(userDocRef);
   // };
   return (
-    <div>
-      <h1>Sign-In Page</h1>
+    <div className='authentication-container'>
       {/* <button onClick={logGoogleUser} >Sign in with Google popup!</button> */}
       <SignInForm/>
       <SignUpForm/>
