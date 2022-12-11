@@ -1,14 +1,14 @@
-import './category-item.style.scss';
+import './directory-item.style.scss';
 import React from 'react'
 
 
-const CategoryItem = ({category}) => {
+const DirectoryItem = ({category}) => {
   const {imageUrl, title} = category;
   return (
-    <div  className="category-container">
+    <div  className="directory-item-container">
       {/* $ in this case allow us to use string inside another string  */}
       <div className="background-image" style={{ backgroundImage: `url(${imageUrl})`}}/>
-      <div className="category-body-container">
+      <div className="directory-body">
         <h2>{title}</h2>
         <p>Shop now</p>
       </div>
@@ -16,4 +16,4 @@ const CategoryItem = ({category}) => {
   )
 }
 
-export default CategoryItem
+export default DirectoryItem;
