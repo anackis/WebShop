@@ -7,6 +7,18 @@
   img {
     width: 30%;
   }
+  
+  .btn {
+    cursor: pointer;
+    width: 20px;
+    display: block;
+    // margin-right: 20px;
+    &__container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
   .item-details {
     width: 70%;
@@ -21,3 +33,4 @@
     }
   }
 }
+
