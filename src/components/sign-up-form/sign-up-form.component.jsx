@@ -21,9 +21,6 @@ const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
 
-  // /* eslint-disable no-unused-vars */
-  // const val = useContext(UserContext); 
-  // /* eslint-disable no-unused-vars */
 
 
   const resetFormFields = () => {
