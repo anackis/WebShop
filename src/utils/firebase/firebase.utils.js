@@ -48,11 +48,11 @@ export const signInWithGoogleRedirect = () => signInWithRedirect(auth, googlePro
 
 export const db = getFirestore();
 
-export const addCollectionAndDocuments = async (collectionKey, abjectsToAdd) => {
+export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
   const collectionRef = collection(db, collectionKey);
   const batch = writeBatch(db);
 
-  abjectsToAdd.forEach((object) => {
+  objectsToAdd.forEach((object) => {
     const docRef = doc(collectionRef, object.title.toLowerCase());
     batch.set(docRef, object);
   });
@@ -66,24 +66,19 @@ export const getCategoriesAndDocuments = async () => {
 
   const querySnapshot = await getDocs(q);
   return querySnapshot.docs.map(docSnapshot => docSnapshot.data());
-
-
-  // const categoryMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
-  //   const { title, items } = docSnapshot.data();
-  //   acc[title.toLowerCase()] = items;
-  //   return acc;
-  // }, {});
-  // return categoryMap;
 }
  
-export const createUserDocumentFromAuth = async (userAuth, additionalInformation ) => {
-  if (!userAuth) return;
-  const userDocRef = doc(db, 'users', userAuth.uid);
-  const userSnapshot = await getDoc(userDocRef);
+export const createUserDocumentFromAuth = async (
+  userAuth, 
+  additionalInformation 
+  ) => {
+    if (!userAuth) return;
+    const userDocRef = doc(db, 'users', userAuth.uid);
+    const userSnapshot = await getDoc(userDocRef);
 
-  if(!userSnapshot.exists()) {
-    const { displayName, email} = userAuth;
-    const createdAt = new Date();
+    if(!userSnapshot.exists()) {
+      const { displayName, email} = userAuth;
+      const createdAt = new Date();
 
     try {
       await setDoc(userDocRef, {
