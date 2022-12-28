@@ -1,0 +1,273 @@
+
+  
+@media only screen and (max-width: 1200px) {
+
+  
+}
+  
+@media only screen and (max-width: 991px) {
+
+  .product-card-container {
+    height: 230px;
+  }
+  .button-container {
+    min-width: 100%;
+    line-height: 20px;
+  }
+  .product-card-container:hover button {
+    top: 120px;
+  }
+  .authentication-container {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .buttons-container {
+    flex-direction: column;
+  }
+  button {
+    border-radius: 6px;
+  }
+
+  .sign-up-container {
+    margin: 0 auto;
+    justify-content: start;
+    h2 {
+      margin-bottom: 0;
+    }
+    .group {
+      margin: 30px 0;
+    }
+    button {
+      margin: 10px auto !important;
+    }
+    .buttons-container {
+      margin-top: -13px;
+    }
+  }
+  .sign-up-container {
+    margin-top: 25px;
+    border: 1px solid black;
+    border-radius: 13px;
+    padding: 10px;
+    background-color: #B7229F;
+    .form-input {
+      // background-color: #7C39B5;
+      border-radius: 6px
+    }
+  }
+  
+}
+  
+  
+@media only screen and (max-width: 768px) {
+
+  .navigation .nav-links-container {
+    width: 60%;
+  }
+  .category-preview-container {
+    margin-bottom: 0;
+    
+    .footer {
+      flex-direction: column;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+  }
+  .button-container {
+    padding: 0 5px 0 5px;
+  }
+  .category-container{
+    row-gap: 15px;
+  }
+  .product-card-container {
+    height: 200px;
+  }
+  .product-card-container img {
+    height: 68%;
+  }
+  .product-card-container:hover button {
+    top: 57px;
+    border-radius: 10px;
+  }
+  .category-previe-header-title {
+    margin: 5px auto;
+  }
+  .checkout-container {
+    width: 85%;
+  }
+  .checkout-container .total {
+    font-size: 28px;
+  }
+  .card-style {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .button-container {
+    min-width: 81%;
+    margin: 0 auto;
+  }
+  .payment-form-container {
+    padding: 17px 0;
+    height: 207px;
+    width: 100%;
+  }
+
+
+}
+  
+  
+@media only screen and (max-width: 576px) {
+  body {
+    padding: 20px 8px;
+  }
+  .navigation{
+    margin-bottom: 6px;
+    .logo-container{
+      padding: 0px;
+      padding-top: 10px;
+      width: 50px;
+    }
+    .nav-links-container{
+      width: calc(100% - 50px)!important;
+    }
+    .nav-link{
+      font-size: 14px;
+      padding: 10px 10px !important;
+    }
+  } 
+
+  .product-card-container img {
+    margin-bottom: 0;
+  }
+  .product-card-container:hover button {
+    margin-bottom: 0 !important;
+  }
+
+  .directory-item-container {
+    height: 190px;
+    .directory-body {
+      padding: 0;
+      width: 28%;
+    }
+  } 
+
+  .cart-dropdown-container {
+    right: 15px;
+  }
+
+  .category-preview-container {
+    .category-previe-header-title {
+      margin: 20px auto;
+    }
+    .preview {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .footer .name {
+      margin-bottom: 0;
+    }
+  }
+
+  .category-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0;
+    
+    .footer {
+      flex-direction: column;
+      margin-top: 20px;
+      font-size: 13px;
+      .name {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .category-title {
+    font-size: 28px;
+    
+  }
+
+  .sign-up-container {
+    width: 100%;
+  }
+
+  .checkout-container {
+    .image-container {
+      display: none;
+    }
+    .name {
+      display: none;
+    }
+    
+  
+  }
+  .header-block_descr {
+    display: none;
+  }
+  .checkout-container {
+    width: 100%;
+    .total {
+      margin-top: 12px;
+      font-size: 24px;
+    }
+    .header-block {
+      width: 25% !important;
+      text-align: center;
+    }
+    .header-block:last-child {
+      width: 25% !important;
+    }
+  }
+  .mobile-comb {
+    display: flex !important;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 10px;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .name {
+      display: block;
+      font-size: 15px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .checkout-item-container {
+    .quantity, .price, .remove-button {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  .payment-form-container {
+    margin: 15px;
+    .form-container {
+      width: 100%;
+      min-width: 300px;
+    }
+    .card-style {
+      width: 90%;
+    }
+    .button-container {
+      min-width: 90%;
+    }
+  }
+
+  .sign-up-container {
+    .group {
+      margin: 20px 0;
+    }
+  }
+
+}
+  

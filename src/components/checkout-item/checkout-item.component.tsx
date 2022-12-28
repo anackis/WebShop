@@ -24,10 +24,16 @@ const CheckoutItem: FC<CheckoutItemProps> = ({cartItem}) => {
   
   return (
     <div className='checkout-item-container'>
+      <div className='mobile-comb'>
+        <div className='image-container'>
+          <img src={imageUrl} alt={`${name}`}/>
+        </div>
+        <span className='name'> {name} </span>
+      </div>
       <div className='image-container'>
         <img src={imageUrl} alt={`${name}`}/>
-      </div>
-      <span className='name'> {name} </span>
+        </div>
+        <span className='name'> {name} </span>
       <span className='quantity'> 
         <div className='arrow' onClick={removeItemHandler}>&#10094;</div>
         <span className='value'>{quantity}</span>

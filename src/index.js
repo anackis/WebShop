@@ -10,6 +10,7 @@ import App from './App';
 import { store, persistor} from './store/store';
 
 import './index.scss';
+import './responsive.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
